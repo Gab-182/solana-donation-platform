@@ -1,0 +1,20 @@
+[package]
+name = "solana-donation-platform"
+version = "0.1.0"
+description = "Created with Anchor"
+edition = "2018"
+author = "Ghaiath Abdoush"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "solana_donation_platform"
+
+[features]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+cpi = ["no-entrypoint"]
+default = []
+
+[dependencies]
+anchor-lang = {version = "0.23.0", features = ["init-if-needed"] }
